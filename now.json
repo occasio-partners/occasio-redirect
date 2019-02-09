@@ -1,0 +1,16 @@
+{
+  "name": "occasio-partners",
+  "alias": "www.occasio-partners.com",
+  "version": 2,
+  "regions": [ "all" ],
+  "routes": [
+    {
+      "src": "^/(.*)",
+      "status": 301,
+      "headers": {
+        "Location": "https://occasio-partners.com/$1",
+        "Cache-Control": "public, immutable, s-maxage=31536000"
+      }
+    }
+  ]
+}
